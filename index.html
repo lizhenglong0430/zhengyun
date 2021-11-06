@@ -96,8 +96,23 @@ body {
     transform: rotateY(0deg);
   }
 }
+.showtime1{
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 50px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#showtime2{
+    color: pink;
+    font-size: 24px;
+    /* border: 2px solid #fff; */
+    text-align: center;
+}
 </style>
-<body>
+<body onload="oneday()">
     <div id="drag-container">
         <div id="spin-container">
         <img src="images/1636171368(1).jpg" alt="">
@@ -120,7 +135,12 @@ body {
         <div id="ground"></div>
       </div>
       <div id="music-container"></div>
+      <span class="showtime1">
+          我们已经在一起
+        <span id="showtime2"></span>
+      </span>
 </body>
+<script src="./计时器.js"></script>
 <script>
     var radius = 240; 
 var autoRotate = true; 
