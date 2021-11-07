@@ -54,6 +54,7 @@ var dateArr = new Array(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
         var click_cnt = 0;
         var $html = document.getElementsByTagName("html")[0];
         var $body = document.getElementsByTagName("body")[0];
+        
         $html.onclick = function(e) {
             var $elem = document.createElement("b");
             $elem.style.color = "#E94F06";
