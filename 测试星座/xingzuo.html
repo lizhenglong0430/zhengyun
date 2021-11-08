@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/index4.css">
+<link rel="stylesheet" href="./css/yinghua.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./js/yinghua.js"></script>
+<body>
+    <div class="cherry">
+        <img id="yinghua" src="./image/yinghua.png" alt="" >
+    </div>
+    <div class="fanzhuantu">
+        <div class="scene">
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <img src="https://i02piccdn.sogoucdn.com/36085695ad98db61" />
+                </div>
+                <div class="card__face card__face--back">
+                  <img src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20170714/0d2633b8892a4c1b9cf08be7daa9d754.webp" alt="">
+                  <div >配对指数：❤❤❤❤❤</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front">
+                    <img src="https://i03piccdn.sogoucdn.com/58b494465de4e9f1" />
+                </div>
+                <div class="card__face card__face--back">
+                    <img src="https://5b0988e595225.cdn.sohucs.com/q_70,c_zoom,w_640/images/20170714/031e8ee010e444cdba7fe50935298776.webp" />
+                    <div >配对指数：❤❤❤❤❤</div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(function(){
+        $('.cherry').Cherry_Blossoms({
+            is_Cherry:true,//是否生成樱花
+            image_min:10,//花瓣最小宽度和高度
+            image_max:50,//花瓣最大宽度和高度
+            time_min:10000,//花瓣最快下坠时间
+            time_max:20000,//花瓣最慢下坠时间
+            interval:500//花瓣生成时间间隔
+        })
+    })
+</script>
+</html>

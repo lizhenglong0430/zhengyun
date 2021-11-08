@@ -16,9 +16,9 @@
 
   window.addEventListener('mousemove',function(xyz){
       // 获取网页左侧距离的图片位置
-      imgx = xyz.x - img.offsetLeft - img.clientWidth /2 -50
+      imgx = xyz.x - img.offsetLeft - img.clientWidth /2
       // 多去网页顶部距离图片的位置
-      imgy = xyz.y - img.offsetTop - img.clientHeight /2 - 50
+      imgy = xyz.y - img.offsetTop - img.clientHeight /2
       // 套入公式，定义图片的旋转角度
       deg = 360*Math.atan(imgy/imgx)/(2*Math.PI)
       // 每当鼠标移动的时候重置index

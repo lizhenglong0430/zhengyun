@@ -1,7 +1,14 @@
+.fanzhuantu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 屏幕高度为100% */
+    /* background: black; */
+}
+
 .scene {
     width: 1000px;
     display: flex;
-    position: absolute;
     justify-content: space-between;
     perspective: 800px;
 }
@@ -28,8 +35,9 @@
     height: 100%;
     backface-visibility: hidden;
     transition: 1s ease-in-out;
-    color: red;
     -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+    color: red;
+    text-align: center;
 }
 
 .scene>.card>.card__face>img {
