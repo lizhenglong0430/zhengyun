@@ -21,6 +21,8 @@
     perspective: 1000px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
   }
 
   #drag-container,
